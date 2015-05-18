@@ -1,5 +1,3 @@
-Chef::Provider::Boxstarter.send(:include, BoxstarterLibrary::Helper)
-
 version = nil
 if node['boxstarter']['version']
   version = "-version '#{node['boxstarter']['version']}' "
